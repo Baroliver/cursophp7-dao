@@ -36,9 +36,16 @@ require_once("config.php");
 //$aluno->insert();
 
 //Update  *****
+//$usuario = new Usuario();
+//$usuario->loadById(8);
+//$usuario->update("professor", "!@#$%");
+//echo $usuario;
+
+
+//Delete
 $usuario = new Usuario();
-$usuario->loadById(8);
-$usuario->update("professor", "!@#$%");
+$usuario->loadById(9);
+$usuario->delete();
 
 echo $usuario;
 
